@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mohan Kumar M | Software Engineer</title>
+<meta name="description" content="Portfolio of Mohan Kumar M, a final-year ECE student building full-stack web apps, IoT systems and AI projects.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><circle cx='16' cy='16' r='9' fill='%23d8bf83'/></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="progress" aria-hidden="true"></div>
+<div class="nebula" aria-hidden="true"><i></i><i></i><i></i></div>
+<canvas id="stars" aria-hidden="true"></canvas>
+
+<header class="nav glass">
+  <a href="#top" class="logo" aria-label="Home">MK</a>
+  <nav aria-label="Main">
+    <a href="#about">About</a><a href="#projects">Projects</a><a href="#experience">Experience</a><a href="#skills">Skills</a><a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main id="top">
+<section class="hero wrap">
+  <div class="hero-text">
+    <p class="status glass"><span class="dot"></span>Open to Software Engineer roles</p>
+    <h1>Mohan<br>Kumar M</h1>
+    <p class="typed">I build <b id="typed">full-stack web apps</b><span class="caret"></span></p>
+    <p class="lead">Final-year ECE student who ships real products, from IoT dashboards wired to ESP32 hardware to websites for paying clients.</p>
+    <div class="actions">
+      <a class="btn primary magnetic" href="assets/resume.pdf" download>Download resume</a>
+      <a class="btn glass magnetic" href="#projects">View projects</a>
+    </div>
+  </div>
+  <div class="scene" aria-hidden="true">
+    <div class="planet-wrap">
+      <div class="ring back"></div>
+      <div class="planet"></div>
+      <div class="ring front"></div>
+      <div class="sat" style="--d:22s"><i><b class="glass">React</b></i></div>
+      <div class="sat" style="--d:30s;rotate:120deg"><i><b class="glass">ESP32</b></i></div>
+      <div class="sat" style="--d:38s;rotate:240deg"><i><b class="glass">Python</b></i></div>
+    </div>
+  </div>
+</section>
+
+<section id="about" class="wrap block">
+  <h2>About</h2>
+  <div class="about">
+    <div class="glass pad">
+      <p>I'm a final-year Electronics and Communication Engineering student at Government College of Engineering, Salem. I started with C and embedded systems, then moved into full-stack development and applied AI.</p>
+      <p>I run a freelance web service for small businesses, turning client requirements into fast, mobile-first sites. Away from the keyboard I'm into astronomy, chess and table tennis.</p>
+    </div>
+    <div class="glass pad facts">
+      <p><span>Education</span>B.E. ECE, GCE Salem, 2027</p>
+      <p><span>CGPA</span>7.54 (till Semester 6)</p>
+      <p><span>Location</span>Salem, Tamil Nadu</p>
+      <p><span>Focus</span>Full-stack, IoT, computer vision</p>
+    </div>
+  </div>
+</section>
+
+<section id="projects" class="wrap block">
+  <h2>Projects</h2>
+  <div class="grid">
+    <article class="glass pad card wide" data-tilt>
+      <h3>Smart Hygiene Management System</h3>
+      <p class="chips" data-chips>React.js, Node.js, Express.js, MongoDB, REST API, ESP32/C++</p>
+      <p>A full-stack IoT platform to monitor and control smart waste bins remotely. Public bins lacked remote monitoring and secure access, so I built both the device firmware and the cloud side.</p>
+      <ul>
+        <li>React.js admin dashboard with real-time monitoring and remote unlock control.</li>
+        <li>Node.js/Express REST APIs with API-key-authenticated telemetry ingestion.</li>
+        <li>MongoDB schema with polling and auto-reconnect logic for reliable device-to-cloud sync.</li>
+        <li>Three authenticated access modes (touch, RFID, remote admin), deployed on Vercel and Render.</li>
+      </ul>
+      <p class="links"><a href="https://github.com/mohan-mk-18" target="_blank" rel="noopener">Source code</a>
+      <!-- TODO: add a live link, e.g. <a href="https://your-app.vercel.app" target="_blank" rel="noopener">Live demo</a> --></p>
+    </article>
+    <article class="glass pad card" data-tilt>
+      <h3>Mohan's WebCraft</h3>
+      <p class="chips" data-chips>Next.js, Three.js, Vercel</p>
+      <p>A live service platform delivering fast, mobile-first single-page sites for small businesses.</p>
+      <ul>
+        <li>Interactive Three.js visuals and structured pricing tiers.</li>
+        <li>WhatsApp-based client intake flow.</li>
+        <li>SEO-optimized metadata, with freelance clients onboarded.</li>
+      </ul>
+      <p class="links"><a href="https://github.com/mohan-mk-18" target="_blank" rel="noopener">Source code</a>
+      <!-- TODO: add your live WebCraft URL here --></p>
+    </article>
+    <article class="glass pad card" data-tilt>
+      <h3>Hand Gesture Detection System</h3>
+      <p class="chips" data-chips>Python, OpenCV, MediaPipe</p>
+      <p>Built during my AI &amp; ML internship. Tracks hand landmark coordinates from a live camera feed and counts raised fingers in real time.</p>
+      <p class="links"><a href="https://github.com/mohan-mk-18" target="_blank" rel="noopener">Source code</a></p>
+    </article>
+  </div>
+</section>
+
+<section id="experience" class="wrap block">
+  <h2>Experience and education</h2>
+  <div class="timeline">
+    <div class="entry glass pad">
+      <p class="when">Apr – May 2026</p>
+      <h3>AI &amp; ML Intern, Code Bind Technologies, Chennai</h3>
+      <p>Developed a hand gesture detection system with Python, OpenCV and MediaPipe, gaining hands-on exposure to machine learning and computer vision.</p>
+    </div>
+    <div class="entry glass pad">
+      <p class="when">2023 – 2027</p>
+      <h3>B.E. Electronics &amp; Communication Engineering</h3>
+      <p>Government College of Engineering, Salem. CGPA 7.54 (till Semester 6).</p>
+    </div>
+    <div class="entry glass pad">
+      <p class="when">2025</p>
+      <h3>Smart India Hackathon</h3>
+      <p>Problem-statement analysis and solution prototyping in a national-level innovation challenge.</p>
+    </div>
+    <div class="entry glass pad">
+      <p class="when">2025</p>
+      <h3>Embedded Systems &amp; IoT Workshop</h3>
+      <p>Hands-on training in embedded architecture and IoT communication protocols.</p>
+    </div>
+  </div>
+</section>
+
+<section id="skills" class="wrap block">
+  <h2>Skills</h2>
+  <div class="grid skills">
+    <div class="glass pad"><h3>Languages</h3><p class="chips" data-chips>C, C++, Python, Java</p></div>
+    <div class="glass pad"><h3>Frontend</h3><p class="chips" data-chips>HTML, CSS, JavaScript, React.js, Next.js, Responsive design, SEO</p></div>
+    <div class="glass pad"><h3>Backend and data</h3><p class="chips" data-chips>Node.js, Express.js, REST APIs, MongoDB, MySQL</p></div>
+    <div class="glass pad"><h3>Tools and deployment</h3><p class="chips" data-chips>Git/GitHub, Vercel, Render, Netlify, Cloudinary</p></div>
+    <div class="glass pad"><h3>Embedded and AI</h3><p class="chips" data-chips>ESP32, IoT, OpenCV, MediaPipe</p></div>
+    <div class="glass pad"><h3>Core concepts</h3><p class="chips" data-chips>OOP, Data structures, Problem solving</p></div>
+  </div>
+</section>
+
+<section id="contact" class="wrap block">
+  <div class="glass pad cta">
+    <h2>Let's build something.</h2>
+    <p>I'm looking for a Software Engineer role where I can build reliable, user-focused applications.</p>
+    <p class="mail"><a href="mailto:mohanmk2006mh@gmail.com" id="mail">mohanmk2006mh@gmail.com</a>
+    <button class="btn glass" id="copy" type="button">Copy email</button></p>
+    <p class="social">
+      <a href="tel:+919514870795">+91 95148 70795</a>
+      <a href="https://linkedin.com/in/mohan-kumar875417298" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://github.com/mohan-mk-18" target="_blank" rel="noopener">GitHub</a>
+    </p>
+  </div>
+</section>
+</main>
+
+<footer class="wrap foot"><p>© <span id="yr">2026</span> Mohan Kumar M. Salem, Tamil Nadu.</p></footer>
+<script src="js/main.js"></script>
+</body>
+</html>
